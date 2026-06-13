@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$CHICKPEAS - The Chickpeas Coin</title>
+    <link rel="stylesheet" href="style.css?v=4">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Particle Canvas for Animated Background -->
+    <div id="particles"></div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <span>$CHICKPEAS</span>
+        </div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="https://x.com/i/communities/2036228963337490561" target="_blank" class="social-link" aria-label="X (formerly Twitter)">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+            </a>
+            <a href="https://pump.fun/coin/EmdzgomZoA71FNjmfowdnQ8Qug83My2ySWfGPSDmpump" target="_blank" class="nav-btn">Buy Now</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-image-container">
+                    <img src="hero_chicks.png" alt="The Chickpeas" class="hero-image">
+                    <div class="image-glow"></div>
+                </div>
+                <h1 class="glitch" data-text="$CHICKPEAS">$CHICKPEAS</h1>
+                <h2 class="subtitle">THE CHICKPEAS</h2>
+
+                <div class="action-buttons">
+                    <a href="https://pump.fun/coin/EmdzgomZoA71FNjmfowdnQ8Qug83My2ySWfGPSDmpump" target="_blank" class="btn primary-btn">
+                        <span class="btn-text">Buy on Pump.fun</span>
+                        <div class="btn-glow"></div>
+                    </a>
+                    <a href="https://dexscreener.com/solana/gjaqkar64uhbkuftfjtp4ystfqnpaumuzgytzdb8ldba" target="_blank" class="btn outline-btn">Dexscreener</a>
+                </div>
+
+                <!-- Contract Address Box -->
+                <div class="contract-box">
+                    <span>CA:</span>
+                    <span id="contract-address" class="address">EmdzgomZoA71FNjmfowdnQ8Qug83My2ySWfGPSDmpump</span>
+                    <button id="copy-btn" title="Copy Address">
+                        <svg viewBox="0 0 24 24" fill="none" class="copy-icon">
+                            <path d="M8 4V16C8 17.1046 8.89543 18 10 18H20C21.1046 18 22 17.1046 22 16V4C22 2.89543 21.1046 2 20 2H10C8.89543 2 8 2.89543 8 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 18V20C16 21.1046 15.1046 22 14 22H4C2.89543 22 2 21.1046 2 20V8C2 6.89543 2.89543 6 4 6H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <span class="copied-tooltip">Copied!</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="about-flex-container">
+                <!-- About Description Card -->
+                <div class="glass-card about-card">
+                    <h3>About Chickpeas</h3>
+                    <p>
+                        $CHICKPEAS is slowly but surely becoming the next animal runner on Solana. It was born from the viral video with over 120m views in 24 hours on Instagram where a Peacock managed to fertilize a Chicken's egg and a hybrid is on its way to be born.
+                        <br><br>
+                        Once this happens, we will have one of the rarest hybrids in the bird ecosystem, marking a historic moment in both biology and crypto.
+                        <br><br>
+                        Follow the journey on our official X community page.
+                    </p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h4>120M+</h4>
+                            <p>Views in 24h</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>Rare</h4>
+                            <p>Hybrid Egg</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>100%</h4>
+                            <p>Solana Runner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Container -->
+                <div class="about-video-container">
+                    <!-- Standard video player playing local chickpeas-video.mp4 -->
+                    <video autoplay loop muted playsinline class="about-video" poster="hero_chicks.png">
+                        <source src="chickpeas-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <a href="https://www.instagram.com/reel/DZf8FvUJEgs/" target="_blank" class="instagram-btn-floating">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="instagram-icon">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        Watch on Instagram
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>$CHICKPEAS</span>
+            </div>
+            <p class="disclaimer">
+                © 2026 $CHICKPEAS. All rights reserved. This coin is for entertainment purposes only and is not financial advice. 
+                Keep the vibes going!
+            </p>
+            <div class="socials">
+                <!-- Twitter/X -->
+                <a href="https://x.com/i/communities/2036228963337490561" target="_blank" class="social-link" aria-label="X (formerly Twitter)">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
